@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login layout example - UIkit documentation</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+        <style type="text/css">
+            *{
+				padding: 0;
+				margin:0;
+				border: none;
+			}
+            .demo{
+                transform: rotateY(0) translateX(-50%) translateY(-50%);
+                transform-origin: 0 0;
+                animation: tokhmi 3s 1;
+            }
+            @keyframes tokhmi{
+                0%{
+                    transform: perspective(800px) rotateY(0deg) translateX(-50%) translateY(-50%);
+                }
+                100%{
+                    transform: perspective(800px) rotateY(90deg) translateX(-50%) translateY(-50%);
+                }
+            }
+        </style>
+        <script type='text/JavaScript'>
+            // function rotate90Deg(){
+            //     console.log(3589);
+            //     document.getElementById("demo").style.transform = "transform: perspective(800px) rotateY(90deg) translateX(-50%) translateY(-50%)";
+            // }
+            function rotate90Deg(){
+                var btn = document.getElementById('btn');
+                btn.setAttribute('class','demo uk-box-shadow-large uk-position-center uk-card uk-card-default uk-card-body@s uk-width-2-5@m uk-width-1-2@s uk-width-3-4@xs uk-width-1-1 uk-align-center uk-grid-small uk-child-width-1-2 uk-flex-center uk-text-center');
+                setTimeout(
+                    function() {
+                        document.location.href="Pages/Page-2.html";
+                    },
+                    3000);
+                // document.location.href="Pages/Page-2.html";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="btn" class="uk-box-shadow-large uk-position-center uk-card uk-card-default uk-card-body@s uk-width-2-5@m uk-width-1-2@s uk-width-3-4@xs uk-width-1-1 uk-align-center uk-grid-small uk-child-width-1-2 uk-flex-center uk-text-center" uk-grid>
+            <img data-src="img/logo-new.png" alt="" class="uk-align-center uk-margin-remove-bottom" uk-img>
+            <!--div class="uk-width-1-2@l uk-width-3-5 uk-align-center">
+                <div class="uk-card uk-card-secondary uk-card-body uk-background-norepeat uk-background-cover uk-height-small" style="background: url('img/logo-new.png');"></div>
+            </div-->
+            <div class="uk-width-1-1" uk-grid>
+                <div class="uk-width-1-1 uk-margin-left">
+                    <div class="uk-card-body uk-padding-small uk-text-right">جهت ورود شماره موبایل خود را وارد نمایید</div>
+                </div>
+                <div class="uk-width-1-1 uk-margin-left uk-margin-remove-top">
+                    <form>
+                        <div class="uk-margin">
+                            <div class="uk-inline uk-width-1-1">
+                                <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                                <input class="uk-input uk-text-right" type="text" placeholder="09123456789">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="uk-button-group uk-width-1-1 uk-margin-bottom uk-margin-small-top">
+                    <a class="uk-width-2-5">
+                        <button class="uk-width-1-1 uk-button uk-button-primary uk-padding-remove uk-margin-small-left" type="button" onclick="rotate90Deg()">
+                            <span class="uk-margin-small-right" uk-icon="icon: chevron-left"></span>
+                            بعدی
+                        </button>
+                    </a>
+                </div>
+                <div class="uk-width-1-1 uk-margin-left uk-margin-small-top">
+                    <hr class="uk-width-1-1 uk-divider-icon">
+                </div>
+                <div class="uk-width-1-1 uk-margin-left uk-margin-remove-top">
+                    <div class="uk-card-body uk-padding-small">چنانچه حساب کاربری نداری ثبت نام کنید</div>
+                </div>
+                <div class="uk-width-1-1 uk-margin-left uk-margin-remove-top uk-margin-bottom">
+                    <button class="uk-button uk-button-default uk-form-width-medium">ایجاد حساب کاربری</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

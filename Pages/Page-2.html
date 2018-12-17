@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login layout example - UIkit documentation</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.10/js/uikit-icons.min.js"></script>
+        <style type="text/css">
+            *{
+				padding: 0;
+				margin:0;
+				border: none;
+			}
+            #demo{
+                transform: rotateY(0) translateX(-50%) translateY(-50%);
+                transform-origin: 0 0;
+                animation: tokhmi 1.5s 1;
+            }
+            @keyframes tokhmi{
+                0%{
+                    transform: perspective(800px) rotateY(270deg) translateX(-50%) translateY(-50%);
+                }
+                100%{
+                    transform: perspective(800px) rotateY(360deg) translateX(-50%) translateY(-50%);
+                }
+            }
+        </style>
+        <script>
+                    // function rotate90Deg2(){
+            //     document.getElementById("demo").style.transform = "rotateY(0)";
+            // }
+        </script>
+    </head>
+    <body>
+    <!--body onload="rotate90Deg2()"-->
+        <div id="demo" class="uk-box-shadow-large uk-position-center uk-card uk-card-default uk-card-body@s uk-width-2-5@m uk-width-1-2@s uk-width-3-4@xs uk-width-1-1 uk-align-center uk-grid-small uk-child-width-1-2 uk-flex-center uk-text-center" uk-grid>
+            <img data-src="img/logo-new.png" alt="" class="uk-align-center uk-margin-remove-bottom" uk-img>
+            <div class="uk-width-1-1" uk-grid>
+                <div class="uk-width-1-1 uk-margin-left">
+                    <div class="uk-card-body uk-padding-small uk-text-right">جهت ورود شماره موبایل خود را وارد نمایید</div>
+                </div>
+                <div class="uk-width-1-1 uk-margin-small-left uk-margin-small-right uk-margin-remove-top">
+                    <form>
+                        <div class="uk-margin">
+                            <div class="uk-inline uk-width-1-1">
+                                <span class="uk-form-icon" uk-icon="icon: unlock"></span>
+                                <input class="uk-input uk-text-right" type="password" placeholder="رمز عبور">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="uk-button-group uk-width-1-1 uk-margin-bottom uk-margin-small-top">
+                    <button class="uk-width-2-5 uk-button uk-button-primary uk-padding-remove uk-margin-small-left">
+                        <span class="uk-margin-small-right" uk-icon="icon: chevron-left"></span>
+                        ورود
+                    </button>
+                    <div class="uk-width-3-5 uk-text-right uk-margin-small-right uk-margin-remove-top uk-grid-small uk-child-width-auto uk-grid">
+                        <label class="uk-width-1-1 uk-margin-small-right uk-margin-small-top"> مرا به یاد بیاور<input class="uk-checkbox uk-margin-small-left" type="checkbox" checked> </label>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
